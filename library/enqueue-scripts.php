@@ -36,6 +36,8 @@ if ( ! function_exists( 'lavacreek_scripts' ) ) :
         // CDN hosted jQuery placed in the header, as some plugins require that jQuery is loaded in the header.
         wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), '3.2
 	.1', true);
+        
+        wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/assets/js/custom-js.js', '', true );
 
         wp_enqueue_script('parallax-js', get_template_directory_uri() . '/library/js/parallax.min.js', array(), '',
             true);

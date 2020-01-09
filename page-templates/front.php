@@ -168,7 +168,22 @@ get_header(); ?>
   </div>
 </section>
 
-<section>
+<div class="homepage-hero-module">
+  <div class="video-container">
+    <div class="filter"></div>
+    <video autoplay loop muted playsinline src="/video/Ski-Day.mp4" class="fillWidth"></video>
+    <div class="poster hidden">
+      <h2>Go Get Some</h2>
+      <!--<img src="/video/Ski-Day.jpg" alt="The Fly Shop - Lava Creek Lodge">-->
+    </div>
+  </div>
+</div>
+
+
+  
+  
+  
+  <section style="display: none;">
   
   <div class="grid-x grid-padding-x">
     
