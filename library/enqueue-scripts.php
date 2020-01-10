@@ -27,17 +27,19 @@ if ( ! function_exists( 'lavacreek_scripts' ) ) :
         // Child Theme CSS
         wp_enqueue_style( 'child-style',get_stylesheet_directory_uri() . '/style.css', array(), '1.0.0', 'all' );
 
-        wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css',
-            array(), '5.7.2', 'all');
+        wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css', array(), '5.7.2', 'all');
+    
+        // Motion UI
+        wp_register_style('motion-ui', get_stylesheet_directory_uri() . '/assets/css/motion-ui.min.css', array(), '4.0.0', 'all');
+        wp_enqueue_style('motion-ui');
 
         // Deregister the jquery version bundled with WordPress.
         wp_deregister_script('jquery');
 
         // CDN hosted jQuery placed in the header, as some plugins require that jQuery is loaded in the header.
-        wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), '3.2
-	.1', true);
+        wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), '3.2.1', true);
         
-        wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/assets/js/custom-js.js', '', true );
+        //wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/assets/js/custom-js.js', '', true );
 
         wp_enqueue_script('parallax-js', get_template_directory_uri() . '/library/js/parallax.min.js', array(), '',
             true);

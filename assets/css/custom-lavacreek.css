@@ -1,6 +1,26 @@
 /*
 Custom CSS for Lava Creek Theme
+
+    - Footer
+    - Front Page
+    - Widgets
+
 */
+:root {
+    --white: #f5f5f5;
+    --hoverWhite: #cfcfcf;
+}
+
+/* Footer
+--------------------- ***/
+.social-icons-footer a {
+    /* Color of FontAwesome */
+    color:var(--white);
+}
+.social-icons-footer a:hover {
+    /* Color of FontAwesome on :hover */
+    color:var(--hoverWhite);
+}
 
 /* Front Page
 --------------------- ****/
@@ -44,17 +64,26 @@ Custom CSS for Lava Creek Theme
     bottom: 0;
     position: absolute;
 }
-.video-container .poster h2 {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-}
 
 .video-container .filter {
+    display: flex;
+    justify-content: center;
     z-index: 100;
     position: absolute;
-    background: rgba(0, 0, 0, 0.4);
+    /*background: rgba(0, 0, 0, 0.4);*/
+    width: 80%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 1.618em;
+}
+.callout.secondary.ease.video-cta {
     width: 100%;
+    margin-left: 1em;
+}
+button.button.video-cta-button {
+    padding: 1rem;
 }
 
 .video-container video {
@@ -65,6 +94,17 @@ Custom CSS for Lava Creek Theme
 
 .video-container video.fillWidth {
     width: 100%;
+}
+
+.video-container video.fillWidth {
+    margin-bottom: -10px;
+}
+
+.homepage-hero-module {
+    /*Soft edge applied to full screen video on front page*/
+    -moz-box-shadow: 1px 1px 3px rgba(0,0,0,.5), 1px -1px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.5), 1px -1px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5), 1px -1px 3px rgba(0,0,0,.5);
 }
 
 /* Widgets

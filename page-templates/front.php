@@ -139,8 +139,8 @@ get_header(); ?>
     <div id="enews-fp" class="card text-center">
       <h2>Lava Creek Lodge, Alaska News</h2>
       <?php dynamic_sidebar('front-top-widget-wide'); ?>
-      
-  </div>
+    
+    </div>
 </section>
 
 <section id="item-row-fp">
@@ -170,20 +170,21 @@ get_header(); ?>
 
 <div class="homepage-hero-module">
   <div class="video-container">
-    <div class="filter"></div>
     <video autoplay loop muted playsinline src="/video/Ski-Day.mp4" class="fillWidth"></video>
-    <div class="poster hidden">
-      <h2>Go Get Some</h2>
-      <!--<img src="/video/Ski-Day.jpg" alt="The Fly Shop - Lava Creek Lodge">-->
+    <div class="filter">
+     
+      <div data-toggler data-animate="fade-in fade-out" class="callout secondary ease video-cta" id="motion-example-1"
+           style="display:none;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, lacinia eget consectetur
+          sed, convallis at tellus.</p>
+        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus .</p>
+      </div>
+      <button type="button" class="button video-cta-button" data-toggle="motion-example-1" aria-expanded="true" aria-controls="motion-example-1">Review The Latest Report</button>
     </div>
   </div>
 </div>
 
-
-  
-  
-  
-  <section style="display: none;">
+<section style="display:none;">
   
   <div class="grid-x grid-padding-x">
     
@@ -220,9 +221,9 @@ get_header(); ?>
           </video>
           <div class="row align-center align-middle">
             <div class="small-8 column text-center" id="message">
-						<span class="fp-movie-comment">
-							<?php echo $fp_movie_comment; ?>
-						</span>
+              <span class="fp-movie-comment">
+                  <?php echo $fp_movie_comment; ?>
+              </span>
             </div>
           </div>
         </div>
@@ -232,7 +233,7 @@ get_header(); ?>
           <div class="orbit-wrapper">
             <div class="orbit-controls">
               <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i
-                  class=" fa-2x fas fa-chevron-left"></i></button>
+                    class=" fa-2x fas fa-chevron-left"></i></button>
               <button class="orbit-next"><span class="show-for-sr">Next Slide</span><i class="
 						fa-2x fas fa-chevron-right"></i></button>
             </div>
@@ -361,27 +362,6 @@ foreach($myposts as $post) : setup_postdata($post);
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- END POSTS -->
 <?php do_action( 'foundationpress_after_content' ); ?>
 
@@ -391,7 +371,7 @@ foreach($myposts as $post) : setup_postdata($post);
 
 		<span class="parallax-text">
 			<?php $parallax_1_cta = get_theme_mod('fp-topparallax-cta');
-      echo $parallax_1_cta; ?>
+            echo $parallax_1_cta; ?>
 		</span>
   
   </div>
@@ -399,9 +379,9 @@ foreach($myposts as $post) : setup_postdata($post);
     <div class="cell large-12 mt-2618 mb-2618 text-center parallax-text-divider">
 		<span class="fp-divider-content">
 		<?php
-    $parallax_divider = get_theme_mod('fp-divider-content');
-    echo $parallax_divider;
-    ?>
+        $parallax_divider = get_theme_mod('fp-divider-content');
+        echo $parallax_divider;
+        ?>
 		</span>
     </div>
   </div>
