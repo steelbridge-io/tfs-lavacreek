@@ -31,6 +31,18 @@ if ( ! function_exists( 'foundationpress_sidebar_widgets' ) ) :
                 'after_title'   => '</h6>',
             )
         );
+  
+        register_sidebar(
+          array(
+            'id'            => 'footer-widgets-below',
+            'name'          => __( 'Footer widgets below', 'foundationpress' ),
+            'description'   => __( 'Drag widgets to this footer container to show content in lower footer.', 'foundationpress' ),
+            'before_widget' => '<section id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</section>',
+            'before_title'  => '<h6>',
+            'after_title'   => '</h6>',
+          )
+        );
 
         register_sidebar(
             array(
